@@ -7,7 +7,24 @@ public class HlavniProgram {
     public void main(String[] args) {
         Turtle zofka;
         zofka = new Turtle();
-        nakresliPrasatko(zofka);
+
+        /*zofka.penUp();
+        zofka.turnLeft(90.0);
+        zofka.move(350.0);
+        zofka.turnRight(90);
+        zofka.move(140.0);
+        zofka.turnRight(90);
+        zofka.penDown();
+
+        nakresliSlunicko(zofka);
+
+        zofka.penUp();
+        zofka.turnRight(180.0);
+        zofka.move(120.0);
+        zofka.turnLeft(90);*/
+
+
+       nakresliPrasatko(zofka);
          zofka.penUp();
          zofka.turnRight(135.0);
          zofka.move(200.0);
@@ -30,6 +47,8 @@ public class HlavniProgram {
         zofka.penDown();
 
         nakresliSlunicko(zofka);
+        /*nakresliDomecek(zofka);*/
+
 
    }
 
@@ -97,10 +116,12 @@ public class HlavniProgram {
         }
      }
 
-    private void nakresliSlunicko(Turtle zofka) {
+   private void nakresliSlunicko(Turtle zofka) {
 
-        for (int i = 0; i < 12; i++) {
-            zofka.move(30.0);
+        for (int i = 0; i < 9; i++) {
+            zofka.move(10.0);
+            zofka.turnLeft(20.0);
+            zofka.move(10.0);
             zofka.turnRight(80.0);
             zofka.move(25.0);
             zofka.penUp();
@@ -108,10 +129,43 @@ public class HlavniProgram {
             zofka.move(25.0);
             zofka.turnRight(100.0);
             zofka.penDown();
-                      zofka.turnLeft(30.0);
+                      zofka.turnLeft(20.0);
         }
     }
-}
+
+    /*private void nakresliDomecek(Turtle zofka) {
+        for (int i = 0; i < 4; i++) {
+            zofka.move(150.0);
+            zofka.turnRight(90.0);
+        }
+
+        zofka.penUp();
+        zofka.move(150.0);
+        zofka.penDown();
+
+        zofka.turnRight(30.0);
+        zofka.move(150.0);
+        zofka.turnRight(120.0);
+        zofka.move(150.0);
+
+        zofka.turnRight(30.0);
+        zofka.penUp();
+        zofka.move(150.0);
+        zofka.turnRight(90.0);
+        zofka.penUp();
+        zofka.turnLeft(180.0);
+        zofka.move(50);
+        zofka.penDown();
+    }*/
+
+
+
+
+    }
+
+
+
+
 
 
 
